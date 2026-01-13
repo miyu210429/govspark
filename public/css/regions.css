@@ -27,7 +27,7 @@
 html,body{height:100%}
 body{
   margin:0;
-  background: linear-gradient(180deg, var(--bg), #ffffff 40%);
+  background: linear-gradient(180deg, var(--bg), #f2f2f2 40%);
   font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color:#111;
   -webkit-font-smoothing:antialiased;
@@ -129,6 +129,115 @@ body{
   overflow-wrap: anywhere;
   word-break:break-word;
 }
+
+/* =========================
+   Prefectures page additions
+   ========================= */
+
+/* 都道府県ページ用：ページ全体の余白を少しだけ詰める（好みで） */
+.page--prefectures .page-container{
+  margin-top: 18px;
+}
+
+/* 見出し（例：関東地区）を写真みたいなバーにする */
+.page--prefectures .region-title{
+  background: linear-gradient(180deg, var(--green), #42bd6f); /* 関東の色。地方別に変えるなら後述 */
+  border-radius: var(--region-radius);
+  padding: 14px 16px;
+  text-align: center;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin: 6px auto 14px auto;
+}
+
+/* 見出しの小さい説明文（括弧内） */
+.page--prefectures .region-title .subtext{
+  display:block;
+  margin-top: 6px;
+  font-weight: 700;
+  opacity: .95;
+}
+
+/* 都道府県リストは「白い箱」を縦に並べる */
+.page--prefectures .regions{
+  /* 既存 .regions を流用するけど、都道府県は高さ固定をやめて伸びる形に */
+  height: auto;
+  grid-auto-rows: auto;
+  gap: 12px;
+  padding-bottom: 70px; /* 戻るボタン分の余白 */
+}
+
+/* 都道府県ボタン（白背景 + 薄いグレー枠） */
+.page--prefectures .region{
+  background: #fff;
+  color: #111;
+  border: 1px solid #ececec;
+  box-shadow: none;               /* 写真っぽく影を弱める */
+  padding: 18px 18px;
+}
+
+/* 既存のグラデ/色クラスが付いてても都道府県では無効化したいので上書き */
+.page--prefectures .region[class*="region--"]{
+  background: #fff !important;
+  color: #111 !important;
+}
+
+/* 都道府県の文字を太く・中央 */
+.page--prefectures .region h2{
+  transform: none;     /* 地方選択用の下げ効果を無効 */
+  margin: 0;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+/* 内側ハイライトも都道府県は控えめに */
+.page--prefectures .region::after{
+  inset: 8px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+  opacity: 1;
+}
+
+/* ===== 戻るボタン：左下・小さめ枠 ===== */
+/* HTML側で class="back-btn" を付ける想定 */
+.page--prefectures .back-btn{
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 50;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e6e6e6;
+  background: rgba(255,255,255,0.92);
+  text-decoration: none;
+  color: #111;
+  font-weight: 800;
+  font-size: 14px;
+
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  backdrop-filter: blur(6px);
+}
+
+.page--prefectures .back-btn:hover{
+  transform: translateY(-2px);
+}
+
+/* スマホは少しだけ小さく */
+@media (max-width: 900px){
+  .page--prefectures .region h2{ font-size: 22px; }
+  .page--prefectures .back-btn{
+    left: 12px;
+    bottom: 12px;
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
+
 
 /* カラー */
 .region--blue{ background: linear-gradient(180deg, var(--blue), #5f98f0); color:#081226; }
