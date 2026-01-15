@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- スタイルシート -->
-  <link rel="stylesheet" href="/css/regions.css">
+  <link rel="stylesheet" href="/css/citizens.css">
 </head>
 <body>
   <div class="page-container">
@@ -32,7 +32,7 @@
           <p class="subtext">（青森、岩手、宮城、秋田、山形、福島）</p>
         </a>
 
-        <a class="region region--green" href="/regions/3" aria-label="関東地区">
+        <a class="region region--green" href="{{ route('prefectures')}}" aria-label="関東地区">
           <h2>関東地区</h2>
           <p class="subtext">（茨城、栃木、群馬、埼玉、千葉、東京、神奈川）</p>
         </a>
