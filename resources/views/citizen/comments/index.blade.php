@@ -40,7 +40,7 @@
   </aside>
 
   {{-- 中央：メイン（Xのタイムラインっぽい） --}}
-  <main class="center" aria-label="投稿一覧">
+  <div class="center" aria-label="投稿一覧">
     <header class="center__header">
       <div class="center__meta">○○地区 ○○県</div>
       <div class="center__topic">【議題】<br><span>○○についてどう考えるか</span></div>
@@ -70,7 +70,7 @@
         </article>
       @endfor
     </section>
-  </main>
+</div>
 
   @section('bottomNav')
   @include('components.bottom-nav')
