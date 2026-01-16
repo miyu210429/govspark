@@ -9,4 +9,4 @@ Route::get('/regions', function () {return view('citizen.areas.regions');})->nam
 Route::get('/regions/kanto', function () {return view('citizen.areas.prefectures');})->name('prefectures');
 
 //コメント一覧ホーム画面。県をURLにする（今は関東地方/東京都）
-Route::get('/index/tokyo', function () {return view('citizen.comments.index');})->name('index');
+Route::get('/comments/tokyo', function () {return view('citizen.comments.comments');})->name('comments');

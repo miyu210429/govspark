@@ -5,7 +5,7 @@
 @endphp
 
 <nav class="c-bottom-nav" aria-label="下部ナビ">
-  <a href="{{ route('index') }}" class="c-bottom-nav__icon {{ $isHome ? 'is-active' : '' }}" aria-label="コメント一覧">
+  <a href="{{ route('comments') }}" class="c-bottom-nav__icon {{ $isHome ? 'is-active' : '' }}" aria-label="コメント一覧">
     {{-- アイコン（まずは絵文字でOK。後でSVGに差し替え可） --}}
     <span class="c-bottom-nav__icon" aria-hidden="true">🏠</span>
   </a>
