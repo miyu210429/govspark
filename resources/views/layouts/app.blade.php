@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
   {{-- 共通CSS --}}
-  <link rel="stylesheet" href="/css/citizens.css">
+  <link rel="stylesheet" href="{{ asset('css/citizens.css') }}">
   {{-- コメント画面用CSSなどを後で追加してOK --}}
   @stack('styles')
 </head>

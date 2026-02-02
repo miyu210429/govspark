@@ -6,7 +6,7 @@
 @section('bodyClass', 'page--feed')
 
 @push('styles')
-  <link rel="stylesheet" href="{{ asset('css/comments.css') }}?v=1">
+  <link rel="stylesheet" href="{{ asset('css/comments.css') }}">
 @endpush
 
 @section('content')

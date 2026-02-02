@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>QGovSpark — 都道府県選択</title>
-  <link rel="stylesheet" href="/css/citizens.css?v=999">
+  <link rel="stylesheet" href="{{ asset('css/citizens.css') }}">
 </head>
 
 <body class="page--prefectures">
@@ -19,7 +19,7 @@
             関東地区
         </div>
       <nav class="regions">
-        <a class="region region--gray" href="{{ route('index') }}">
+        <a class="region region--gray" href="{{ route('comments') }}">
           <h2>東京都</h2>
         </a>
 

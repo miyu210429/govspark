@@ -9,13 +9,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- スタイルシート -->
-  <link rel="stylesheet" href="/css/citizens.css">
+  <link rel="stylesheet" href="{{ asset('css/citizens.css') }}">
 </head>
 <body>
   <div class="page-container">
-    <header class="site-header" role="banner" aria-label="サイトヘッダー">
-      <img src="/images/Govspark.png" class="logo">
-    </header>
+  @include('components.header')
   
     <div>
       <h3 class="subtext">あなたの住んでいる地方を選択してください</h3>
