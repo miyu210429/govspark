@@ -1,0 +1,108 @@
+/* 検索結果ページ用スタイル */
+
+/* 検索ページのbody設定 */
+body:has(.search-box-container) {
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/* 検索ボックスコンテナ（固定） */
+.search-box-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    gap: 10px;
+}
+
+.search-icon {
+    font-size: 18px;
+    color: #999;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 15px;
+    outline: none;
+    color: #333;
+}
+
+.search-input::placeholder {
+    color: #999;
+}
+
+/* 検索結果ヘッダー（固定） */
+.search-result-header {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 998;
+}
+
+.search-title {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0;
+}
+
+/* 検索結果コンテンツ（スクロール可能） */
+.search-content {
+    margin-top: 175px;
+    background-color: #fff;
+    min-height: calc(100vh - 175px);
+}
+
+/* 検索結果リストの下部余白 */
+.search-content .profile-post-list {
+    padding-bottom: 100px;
+}
+
+/* NEWバッジ */
+.new-badge {
+    background-color: #ff0000;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+/* レスポンシブ対応 */
+@media (min-width: 768px) {
+    .search-box-container {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    
+    .search-result-header {
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
