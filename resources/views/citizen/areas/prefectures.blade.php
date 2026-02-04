@@ -13,36 +13,20 @@
             <img src="{{ asset('images/Govspark.png') }}" alt="GovSpark デジタル庁">
         </div>
 
-        <!-- 地域ヘッダー（関東地区） -->
-        <div class="region-header kanto"><!--region_select.css のkanto とかtohokuとかつけたら対応した地区の色になる、茨城とかは別途表示かえてやって-->
-            <span class="region-title">関東地区</span>
-            <span class="region-prefectures">（茨城、栃木、群馬、埼玉、千葉、東京、神奈川）</span>
+
+        <!-- 地域ヘッダー -->
+        <div class="region-header {{$region_en}}"><!--region_select.css のkanto とかtohokuとかつけたら対応した地区の色になる、茨城とかは別途表示かえてやって-->
+            <span class="region-title">{{ $regions_detail[$region_en][0] }}</span>
+            <span class="region-prefectures">（{{ $regions_detail[$region_en][1] }}）</span>
         </div>
 
         <!-- 都道府県選択エリア -->
         <div class="prefecture-select">
-            <!-- 茨城県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">茨城県</button>
 
-            <!-- 栃木県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">栃木県</button>
+            @foreach($prefectures[$region_en] as $prefecture)
+                <button class="prefecture-button" onclick="location.href='{{ route('index', ['prefecture' => $prefectures_en[$prefecture]]) }}'">{{$prefecture}}</button>
+            @endforeach
 
-            <!-- 群馬県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">群馬県</button>
-
-            <!-- 埼玉県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">埼玉県</button>
-
-            <!-- 千葉県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">千葉県</button>
-
-            <!-- 東京都 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">東京都</button>
-
-            <!-- 神奈川県 -->
-            <button class="prefecture-button" onclick="location.href='3.html'">神奈川県</button>
-
-            <!-- 戻る -->
             <a href="1.html" class="back-button">戻る</a>
         </div>
     </div>
