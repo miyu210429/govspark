@@ -15,7 +15,9 @@ class AreaController extends Controller
         ]);
     }
 
-    public function getPrefectures($region_en) {
+    //都道府県選択画面で表示するための都道府県を取得する関数です。
+
+    public function getPrefectures(string $region_en) {
         $regions_detail = config('regions.detail');
         $prefectures = [
             'tohoku' => ['青森','岩手','宮城','秋田','山形','福島'],

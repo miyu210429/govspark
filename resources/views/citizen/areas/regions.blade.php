@@ -18,7 +18,7 @@
             <div class="region-select">
                 @if(!isset($detail[1]))
                     <!--　北海道地区 -->
-                    <button class="region-button {{ $region_en }}" onclick="location.href='2.html'">
+                    <button class="region-button {{ $region_en }}" onclick="location.href='{{ route('index', ['prefecture' => $detail[0]]) }}'">
                         <span class="region-title">{{$detail[0]}}</span>
                     </button>
                 @else
@@ -31,7 +31,7 @@
         @endforeach
 
             <!-- 比例代表制 -->
-            <button class="region-button proportional" onclick="location.href='2.html'">
+            <button class="region-button proportional" onclick="location.href='{{ route('index', ['prefecture' => '比例代表制'] )}}'">
                 <span class="region-title">比例代表制</span>
             </button>
         </div>

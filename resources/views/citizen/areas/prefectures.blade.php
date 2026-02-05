@@ -27,7 +27,7 @@
                 <button class="prefecture-button" onclick="location.href='{{ route('index', ['prefecture' => $prefectures_en[$prefecture]]) }}'">{{$prefecture}}</button>
             @endforeach
 
-            <a href="1.html" class="back-button">戻る</a>
+            <button type="button" class="back-button" onclick="history.back()">戻る</button>
         </div>
     </div>
 </body>
