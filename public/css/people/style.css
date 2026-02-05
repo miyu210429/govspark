@@ -61,13 +61,13 @@ body {
 }
 
 .header-info {
-    text-align: center;
     padding: 15px 20px 10px;
 }
 
 .location-text {
     font-size: 14px;
     color: #666;
+    text-align: center;
     margin-bottom: 5px;
 }
 
@@ -75,13 +75,44 @@ body {
     font-size: 12px;
     color: #999;
     margin-bottom: 8px;
+    text-align: center;
+}
+
+.topic-row {
+    display: block;
+    text-align: center;
+}
+
+.topic-select {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 
 .main-question {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    appearance: none;
+    border: 1px solid #e3e6ea;
+    border-radius: 999px;
+    padding: 8px 32px 8px 14px;
+    font-size: 14px;
+    color: #2a2e32;
+    background-color: #f6f7f9;
     line-height: 1.4;
+    max-width: 100%;
+}
+
+.main-question:focus {
+    outline: none;
+    border-color: #2f6cff;
+    box-shadow: 0 0 0 3px rgba(47, 108, 255, 0.15);
+}
+
+.select-chevron {
+    position: absolute;
+    right: 12px;
+    color: #6b7280;
+    font-size: 12px;
+    pointer-events: none;
 }
 
 /* ハンバーガーメニュー */

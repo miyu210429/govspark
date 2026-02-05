@@ -9,9 +9,10 @@ Route::get('/regions', [\App\Http\Controllers\AreaController::class, 'getRegions
 Route::get('/regions/{region}',  [\App\Http\Controllers\AreaController::class, 'getPrefectures'])
     ->name('prefectures');
 
-Route::prefix('{prefecture}')->group(function () {
+Route::prefix('/{prefecture?}')->group(function () {
     //コメント一覧ホーム画面。県をURLにする（今は関東地方/東京都）
-    Route::get('/comments', function () {return view('citizen.comments.comments');})->name('index');
+    Route::get('/comments',  [\App\Http\Controllers\CommentController::class, 'getCommentsInfo'])
+        ->name('index');
     //批判投稿画面(ダミーなのでコメントIDは1固定)
     Route::get('comments/1/critique', function () {return view('citizen.comments.critique');})->name('critique');
     //立候補者詳細画面
