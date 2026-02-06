@@ -72,7 +72,7 @@
                             <div class="candidate-date">{{$comment['created_at']}}</div>
                         </div>
                         <div class="candidate-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='9.html'">📢</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en]) }}'">📢</button>
                             <button class="action-icon" aria-label="共有">🔗</button>
                         </div>
                     </div>

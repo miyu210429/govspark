@@ -38,9 +38,22 @@ correctionForm.addEventListener('submit', function(e) {
         }
     }, 1000);
     
-    // 3秒後に前のページに戻る
+    // 3秒後に前のページに戻る（履歴がなければ戻り先を使用）
     setTimeout(function() {
         popupOverlay.classList.remove('show');
-        window.history.back();
+        if (window.history.length > 1) {
+            window.history.back();
+            return;
+        }
+
+        const returnUrl = document.body ? document.body.dataset.returnUrl : '';
+        if (returnUrl) {
+            window.location.href = returnUrl;
+            return;
+        }
+
+        if (document.referrer) {
+            window.location.href = document.referrer;
+        }
     }, 3000);
 });

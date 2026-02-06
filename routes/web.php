@@ -14,9 +14,17 @@ Route::prefix('/{prefecture?}')->group(function () {
     Route::get('/comments',  [\App\Http\Controllers\CommentController::class, 'getCommentsInfo'])
         ->name('index');
     //批判投稿画面(ダミーなのでコメントIDは2固定)
-    Route::get('comments/2/critique', function () {return view('citizen.comments.critique');})->name('critique');
+    Route::get('comments/2/critique', function (?string $prefecture = null) {
+        return view('citizen.comments.critique', [
+            'prefecture_en' => $prefecture,
+        ]);
+    })->name('critique');
     //立候補者詳細画面
-    Route::get('/politician/2', function () {return view('citizen.politician-detail');})->name('politician.detail');
+    Route::get('/politician/2', function (string $prefecture) {
+        return view('citizen.politician-detail', [
+            'prefecture_en' => $prefecture,
+        ]);
+    })->name('politician.detail');
     //検索画面
     Route::get('/search', function () {return view('citizen.search.search');})->name('search');
     //検索結果画面(ダミーの検索なので区別するために１をつけている)
@@ -24,4 +32,3 @@ Route::prefix('/{prefecture?}')->group(function () {
     //バグ報告画面用
     Route::get('/report', function () {return view('citizen.report');})->name('report');
 });
-
