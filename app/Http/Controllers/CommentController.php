@@ -25,6 +25,7 @@ class CommentController extends Controller
             'prefecture_kanji' => $prefecture_kanji[$prefecture],
             'comments_detail' => $comments_detail,
             'topics' => $topics,
+            'prefecture_en' => $prefecture,
         ]);
     }
 }
