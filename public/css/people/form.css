@@ -64,7 +64,7 @@
     color: #333;
     margin-bottom: 8px;
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     border-radius: 4px;
 }
@@ -73,7 +73,7 @@
     width: 100%;
     padding: 12px 15px;
     font-size: 16px;
-    border: 2px solid #007bff;
+    border: 2px solid #333;
     border-radius: 4px;
     background-color: #fff;
     color: #333;
@@ -99,8 +99,8 @@
 
 .form-select:focus {
     outline: none;
-    border-color: #0056b3;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    border-color: #222;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
 .form-textarea {
@@ -108,7 +108,7 @@
     min-height: 150px;
     padding: 12px 15px;
     font-size: 15px;
-    border: 2px solid #007bff;
+    border: 2px solid #333;
     border-radius: 4px;
     background-color: #fff;
     color: #333;
@@ -124,8 +124,8 @@
 
 .form-textarea:focus {
     outline: none;
-    border-color: #0056b3;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    border-color: #222;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 }
 
 .form-textarea::placeholder {
