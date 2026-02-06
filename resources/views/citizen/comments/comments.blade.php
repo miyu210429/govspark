@@ -40,7 +40,7 @@
             <button class="close-button" id="closeButton" aria-label="閉じる">×</button>
         </div>
         <ul class="menu-list">
-            <li class="menu-item"><a href="8.html">検索する</a></li>
+            <li class="menu-item"><a href="{{route('search',['prefecture' => $prefecture_en])}}">検索する</a></li>
             <li class="menu-item"><a href="1.html">地区選択に戻る</a></li>
             <li class="menu-item"><a href="6.html">バグ報告</a></li>
         </ul>

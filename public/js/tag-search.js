@@ -11,6 +11,12 @@ let currentDisplayCount = INITIAL_DISPLAY;
 // DOM要素
 const tagContainer = document.getElementById('tagContainer');
 const showMoreButton = document.getElementById('showMoreButton');
+const selectedTagsContainer = document.getElementById('selectedTags');
+const keywordInput = document.getElementById('keywordInput');
+const keywordSearchBox = document.querySelector('.keyword-search-box');
+const searchButton = document.querySelector('.search-icon-button');
+
+const selectedTags = new Set();
 
 // タグを生成して追加
 function initializeTags() {
@@ -25,11 +31,9 @@ function initializeTags() {
             button.classList.add('hidden');
         }
         
-        // クリックイベント（検索ページへ遷移など）
+        // クリックイベント（選択/解除）
         button.addEventListener('click', function() {
-            console.log(`タグ「${tag}」がクリックされました`);
-            // 検索結果ページへ遷移
-            window.location.href = `7.html?tag=${encodeURIComponent(tag)}`;
+            toggleTagSelection(tag, button);
         });
         
         tagContainer.appendChild(button);
@@ -37,6 +41,45 @@ function initializeTags() {
     
     // もっと見るボタンの表示状態を更新
     updateShowMoreButton();
+}
+
+function toggleTagSelection(tag, button) {
+    if (selectedTags.has(tag)) {
+        selectedTags.delete(tag);
+        button.classList.remove('selected');
+    } else {
+        selectedTags.add(tag);
+        button.classList.add('selected');
+    }
+
+    renderSelectedTags();
+}
+
+function renderSelectedTags() {
+    selectedTagsContainer.innerHTML = '';
+    selectedTags.forEach((tag) => {
+        const chip = document.createElement('span');
+        chip.className = 'selected-tag';
+        chip.textContent = tag;
+
+        const removeButton = document.createElement('button');
+        removeButton.type = 'button';
+        removeButton.setAttribute('aria-label', `${tag} を削除`);
+        removeButton.textContent = '×';
+        removeButton.addEventListener('click', () => {
+            selectedTags.delete(tag);
+            const tagButton = Array.from(tagContainer.querySelectorAll('.tag-button'))
+                .find((btn) => btn.textContent === tag);
+            if (tagButton) {
+                tagButton.classList.remove('selected');
+            }
+            renderSelectedTags();
+            keywordInput.focus();
+        });
+
+        chip.appendChild(removeButton);
+        selectedTagsContainer.appendChild(chip);
+    });
 }
 
 // もっと見るボタンの表示/非表示を制御
@@ -61,6 +104,16 @@ showMoreButton.addEventListener('click', function() {
     currentDisplayCount = nextDisplayCount;
     updateShowMoreButton();
 });
+
+// 検索ボタンのクリックイベント
+if (searchButton && keywordSearchBox) {
+    searchButton.addEventListener('click', function() {
+        const resultUrl = keywordSearchBox.dataset.resultUrl;
+        if (resultUrl) {
+            window.location.href = resultUrl;
+        }
+    });
+}
 
 // 初期化
 document.addEventListener('DOMContentLoaded', function() {

@@ -37,9 +37,9 @@
 
     <!-- 検索ボックス（固定） -->
     <div class="search-box-container">
-        <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" class="search-input" placeholder="#◯◯県　#◯◯市" value="">
+        <div class="search-box" data-reload="true">
+            <button type="button" class="search-icon-button" id="searchButton" aria-label="検索">🔍</button>
+            <input type="text" class="search-input" id="searchInput" placeholder="#教育平等　#若者支援" value="">
         </div>
     </div>
 
@@ -413,5 +413,15 @@
     <!-- ========== フッター（固定、コピペ用ここまで） ========== -->
 
     <script src="{{ asset('js/menu.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchButton = document.getElementById('searchButton');
+            if (!searchButton) return;
+
+            searchButton.addEventListener('click', function() {
+                window.location.href = window.location.href;
+            });
+        });
+    </script>
 </body>
 </html>
