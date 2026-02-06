@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/people/politician.css') }}">
     <link rel="stylesheet" href="{{ asset('css/people/correction-form.css') }}">
 </head>
-<body>
+<body data-return-url="{{ route('index', ['prefecture' => $prefecture_en]) }}">
     <!-- ========== ヘッダー（固定、コピペ用ここから） ========== -->
     <header class="header">
         <div class="header-top">
