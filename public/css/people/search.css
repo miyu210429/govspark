@@ -26,9 +26,13 @@ body:has(.search-box-container) {
     gap: 10px;
 }
 
-.search-icon {
+.search-icon-button {
+    border: none;
+    background: none;
     font-size: 18px;
     color: #999;
+    cursor: pointer;
+    padding: 0;
 }
 
 .search-input {

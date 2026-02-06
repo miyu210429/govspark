@@ -39,9 +39,12 @@
         <h1 class="page-title">検索</h1>
         
         <!-- 検索ボックス -->
-        <div class="keyword-search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" class="keyword-input" placeholder="キーワードを入力">
+        <div class="keyword-search-box" data-result-url="{{ route('search.result', ['prefecture' => $prefecture_en ?? null]) }}">
+            <button type="button" class="search-icon-button" aria-label="検索">🔍</button>
+            <div class="keyword-input-wrapper" id="keywordInputWrapper">
+                <div class="selected-tags" id="selectedTags"></div>
+                <input type="text" class="keyword-input" id="keywordInput" placeholder="キーワードを入力">
+            </div>
         </div>
 
         <!-- タグセクション -->
