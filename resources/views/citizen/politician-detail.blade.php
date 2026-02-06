@@ -8,31 +8,8 @@
     <link rel="stylesheet" href="{{ asset('css/people/politician.css') }}">
 </head>
 <body>
-    <!-- ========== ヘッダー（固定、コピペ用ここから） ========== -->
-    <header class="header">
-        <div class="header-top">
-            <div class="header-logo">
-                <a href="1.html">
-                    <img src="{{ asset('images/Govspark.png') }}" alt="GovSpark">
-                </a>
-            </div>
-            <button class="menu-button" id="menuButton" aria-label="メニュー">⋮</button>
-        </div>
-    </header>
-
-    <!-- ハンバーガーメニュー -->
-    <div class="menu-overlay" id="menuOverlay"></div>
-    <nav class="menu-panel" id="menuPanel">
-        <div class="menu-header">
-            <button class="close-button" id="closeButton" aria-label="閉じる">×</button>
-        </div>
-        <ul class="menu-list">
-            <li class="menu-item"><a href="8.html">検索する</a></li>
-            <li class="menu-item"><a href="1.html">地区選択に戻る</a></li>
-            <li class="menu-item"><a href="6.html">バグ報告</a></li>
-        </ul>
-    </nav>
-    <!-- ========== ヘッダー（固定、コピペ用ここまで） ========== -->
+    @include('partials.header')
+    @include('partials.menu')
 
     <!-- プロフィールヘッダー -->
     <div class="profile-header">
@@ -748,16 +725,7 @@
     </div>
     <!-- ========== メインコンテンツ（ここまで） ========== -->
 
-    <!-- ========== フッター（固定、コピペ用ここから） ========== -->
-    <footer class="footer">
-        <button class="footer-button">
-            <span class="icon-home"></span>
-        </button>
-        <button class="footer-button">
-            <span class="icon-search"></span>
-        </button>
-    </footer>
-    <!-- ========== フッター（固定、コピペ用ここまで） ========== -->
+    @include('partials.footer')
 
     <script src="{{ asset('js/menu.js') }}"></script>
     <script src="{{ asset('js/criticism-toggle.js') }}"></script>
