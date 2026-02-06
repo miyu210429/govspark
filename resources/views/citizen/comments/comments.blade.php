@@ -53,13 +53,13 @@
             <!-- 立候補者 -->
             @foreach($comments_detail as $comment )
                 <div class="candidate-item">
-                    <div class="candidate-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                    <div class="candidate-avatar" onclick="location.href='{{ route('politician.detail',['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                         <img src="{{ asset('images/politician/'.$comment['politician_image'].'.png') }}" alt="立候補者1">
                     </div>
                     <div class="candidate-info">
                         <div class="candidate-header">
                             <div>
-                                <div class="candidate-name" onclick="location.href='4-5.html'" style="cursor: pointer;">{{$comment['politician_name']}}　{{$comment['party']}}</div>
+                                <div class="candidate-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">{{$comment['politician_name']}}　{{$comment['party']}}</div>
                                 <div class="candidate-party">{{$comment['body']}}</div>
                             </div>
                         </div>
