@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GovSpark - バグ報告</title>
+    <title>GovSpark - バグや不具合の報告</title>
     <link rel="stylesheet" href="{{ asset('css/people/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/people/form.css') }}">
 </head>
@@ -29,7 +29,7 @@
         <ul class="menu-list">
             <li class="menu-item"><a href="8.html">検索する</a></li>
             <li class="menu-item"><a href="1.html">地区選択に戻る</a></li>
-            <li class="menu-item"><a href="6.html">バグ報告</a></li>
+            <li class="menu-item"><a href="{{route('report', ['prefecture' => $prefecture_en])}}">バグ報告</a></li>
         </ul>
     </nav>
     <!-- ========== ヘッダー（固定、コピペ用ここまで） ========== -->
@@ -44,7 +44,7 @@
 
     <!-- フォームコンテンツ -->
     <div class="form-content">
-        <h1 class="form-title">バグ報告</h1>
+        <h1 class="form-title">バグや不具合の報告</h1>
 
         <form class="bug-report-form" id="bugReportForm">
             <!-- カテゴリ選択 -->
@@ -62,10 +62,10 @@
             <!-- 詳細入力 カテゴリ選択するまで入力できない-->
             <div class="form-group">
                 <label for="detailTextarea" class="form-label">詳細</label>
-                <textarea 
-                    id="detailTextarea" 
-                    class="form-textarea" 
-                    placeholder="入力" 
+                <textarea
+                    id="detailTextarea"
+                    class="form-textarea"
+                    placeholder="入力"
                     disabled
                     required
                 ></textarea>

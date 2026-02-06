@@ -30,7 +30,7 @@
         <ul class="menu-list">
             <li class="menu-item"><a href="8.html">検索する</a></li>
             <li class="menu-item"><a href="1.html">地区選択に戻る</a></li>
-            <li class="menu-item"><a href="6.html">バグ報告</a></li>
+            <li class="menu-item"><a href="{{route('report', ['prefecture' => $prefecture_en])}}">バグ報告</a></li>
         </ul>
     </nav>
     <!-- ========== ヘッダー（固定、コピペ用ここまで） ========== -->
@@ -77,9 +77,9 @@
 
             <!-- テキストエリア -->
             <div class="textarea-container">
-                <textarea 
-                    id="correctionText" 
-                    class="correction-textarea" 
+                <textarea
+                    id="correctionText"
+                    class="correction-textarea"
                     placeholder="この投稿は公開されます、誹謗中傷は決して行わないでください"
                     rows="8"
                     required
