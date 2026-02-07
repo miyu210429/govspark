@@ -76,6 +76,12 @@ body:has(.search-box-container) {
     min-height: calc(100vh - 175px);
 }
 
+/* 検索結果のリストは横並びレイアウトにする */
+.search-content .profile-post-item {
+    display: flex;
+    align-items: flex-start;
+}
+
 /* 検索結果リストの下部余白 */
 .search-content .profile-post-list {
     padding-bottom: 100px;

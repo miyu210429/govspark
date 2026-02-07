@@ -30,13 +30,13 @@
         <div class="profile-post-list">
             <!-- 検索結果1 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/1.png') }}" alt="立候補者1">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">山田 太郎 進歩党 <span class="new-badge">NEW</span></div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">山田 太郎 進歩党 <span class="new-badge">NEW</span></div>
                             <div class="profile-post-topic">議題：大学無償化 | 新宿区 東京都新宿市</div>
                         </div>
                     </div>
@@ -59,13 +59,13 @@
 
             <!-- 検索結果2 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/2.png') }}" alt="立候補者2">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">佐藤 美咲 改革の党 <span class="new-badge">NEW</span></div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">佐藤 美咲 改革の党 <span class="new-badge">NEW</span></div>
                             <div class="profile-post-topic">議題：子育て支援 | 港区 東京都港市</div>
                         </div>
                     </div>
@@ -88,13 +88,13 @@
 
             <!-- 検索結果3 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/3.png') }}" alt="立候補者3">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">田中 健一 未来党 <span class="new-badge">NEW</span></div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">田中 健一 未来党 <span class="new-badge">NEW</span></div>
                             <div class="profile-post-topic">議題：環境政策 | 中央区 東京都中央市</div>
                         </div>
                     </div>
@@ -117,13 +117,13 @@
 
             <!-- 検索結果4 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/1.png') }}" alt="立候補者4">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">鈴木 麗子 市民党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">鈴木 麗子 市民党</div>
                             <div class="profile-post-topic">議題：地方創生 | 渋谷区 東京都渋谷市</div>
                         </div>
                     </div>
@@ -146,13 +146,13 @@
 
             <!-- 検索結果5 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/2.png') }}" alt="立候補者5">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">高橋 大輔 希望の党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">高橋 大輔 希望の党</div>
                             <div class="profile-post-topic">議題：医療制度 | 世田谷区 東京都世田谷市</div>
                         </div>
                     </div>
@@ -175,13 +175,13 @@
 
             <!-- 検索結果6 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/3.png') }}" alt="立候補者6">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">中村 彩花 立憲党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">中村 彩花 立憲党</div>
                             <div class="profile-post-topic">議題：働き方改革 | 品川区 東京都品川市</div>
                         </div>
                     </div>
@@ -204,13 +204,13 @@
 
             <!-- 検索結果7 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/1.png') }}" alt="立候補者7">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">伊藤 修平 公明党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">伊藤 修平 公明党</div>
                             <div class="profile-post-topic">議題：デジタル化 | 目黒区 東京都目黒市</div>
                         </div>
                     </div>
@@ -233,13 +233,13 @@
 
             <!-- 検索結果8 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/2.png') }}" alt="立候補者8">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">渡辺 真理 民主党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">渡辺 真理 民主党</div>
                             <div class="profile-post-topic">議題：ジェンダー平等 | 杉並区 東京都杉並市</div>
                         </div>
                     </div>
@@ -262,13 +262,13 @@
 
             <!-- 検索結果9 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/3.png') }}" alt="立候補者9">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">小林 拓也 自由党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">小林 拓也 自由党</div>
                             <div class="profile-post-topic">議題：防災対策 | 豊島区 東京都豊島市</div>
                         </div>
                     </div>
@@ -291,13 +291,13 @@
 
             <!-- 検索結果10 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/1.png') }}" alt="立候補者10">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">加藤 由美 維新の党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">加藤 由美 維新の党</div>
                             <div class="profile-post-topic">議題：観光振興 | 北区 東京都北市</div>
                         </div>
                     </div>
@@ -320,13 +320,13 @@
 
             <!-- 検索結果11 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/2.png') }}" alt="立候補者11">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">松本 隆志 国民党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">松本 隆志 国民党</div>
                             <div class="profile-post-topic">議題：多様性社会 | 荒川区 東京都荒川市</div>
                         </div>
                     </div>
@@ -349,13 +349,13 @@
 
             <!-- 検索結果12 -->
             <div class="profile-post-item">
-                <div class="profile-post-avatar" onclick="location.href='4-5.html'" style="cursor: pointer;">
+                <div class="profile-post-avatar" onclick="location.href='{{ route('politician.detail', ['prefecture' =>$prefecture_en ]) }}'" style="cursor: pointer;">
                     <img src="{{ asset('images/politician/3.png') }}" alt="立候補者12">
                 </div>
                 <div class="profile-post-content">
                     <div class="profile-post-header">
                         <div>
-                            <div class="profile-post-name" onclick="location.href='4-5.html'" style="cursor: pointer;">森田 翔太 社会党</div>
+                            <div class="profile-post-name" onclick="location.href='{{ route('politician.detail', ['prefecture' => $prefecture_en]) }}'" style="cursor: pointer;">森田 翔太 社会党</div>
                             <div class="profile-post-topic">議題：若者政策 | 板橋区 東京都板橋市</div>
                         </div>
                     </div>
