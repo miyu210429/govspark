@@ -334,11 +334,11 @@ body {
 }
 
 .icon-home {
-    background-image: url("/images/home.png");
+    background-image: url("../../images/home.png");
 }
 
 .icon-search {
-    background-image: url("/images/search.png");
+    background-image: url("../../images/search.png");
 }
 
 .icon-megaphone,
@@ -352,11 +352,11 @@ body {
 }
 
 .icon-megaphone {
-    background-image: url("/images/megaphone.png");
+    background-image: url("../../images/megaphone.png");
 }
 
 .icon-link {
-    background-image: url("/images/link.png");
+    background-image: url("../../images/link.png");
 }
 
 /* レスポンシブ対応 */
