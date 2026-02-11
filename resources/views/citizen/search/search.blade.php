@@ -17,7 +17,9 @@
         
         <!-- 検索ボックス -->
         <div class="keyword-search-box" data-result-url="{{ route('search.result', ['prefecture' => $prefecture_en ?? null]) }}">
-            <button type="button" class="search-icon-button" aria-label="検索">🔍</button>
+            <button type="button" class="search-icon-button" aria-label="検索">
+                <span class="icon-search" aria-hidden="true"></span>
+            </button>
             <div class="keyword-input-wrapper" id="keywordInputWrapper">
                 <div class="selected-tags" id="selectedTags"></div>
                 <input type="text" class="keyword-input" id="keywordInput" placeholder="キーワードを入力">

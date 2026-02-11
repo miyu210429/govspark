@@ -22,7 +22,7 @@ class CommentController extends Controller
 
         return view('citizen.comments.comments',[
             'region_kanji' => $region_kanji($prefecture),
-            'prefecture_kanji' => $prefecture_kanji[$prefecture],
+            'prefecture_kanji' => $prefecture_kanji[$prefecture] ?? null,
             'comments_detail' => $comments_detail,
             'topics' => $topics,
             'prefecture_en' => $prefecture,

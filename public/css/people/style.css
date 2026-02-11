@@ -322,13 +322,41 @@ body {
     opacity: 0.6;
 }
 
-/* アイコンフォント代替（シンプルな図形で表現） */
-.icon-home::before {
-    content: "🏠";
+/* アイコン画像 */
+.icon-home,
+.icon-search {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.icon-search::before {
-    content: "🔍";
+.icon-home {
+    background-image: url("/images/home.png");
+}
+
+.icon-search {
+    background-image: url("/images/search.png");
+}
+
+.icon-megaphone,
+.icon-link {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-megaphone {
+    background-image: url("/images/megaphone.png");
+}
+
+.icon-link {
+    background-image: url("/images/link.png");
 }
 
 /* レスポンシブ対応 */
