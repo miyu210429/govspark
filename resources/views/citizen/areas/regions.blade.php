@@ -35,11 +35,6 @@
                 <span class="region-title">比例代表制</span>
             </button>
         </div>
-
-        <!-- Language -->
-        <div class="language-section">
-            <p>Language</p>
-        </div>
     </div>
 </body>
 </html>

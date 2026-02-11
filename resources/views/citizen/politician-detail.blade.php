@@ -58,8 +58,12 @@
                                 <div class="profile-post-date">1月12日 09:15</div>
                             </div>
                             <div class="profile-post-actions">
-                                <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' =>  $prefecture_en]) }}'">📢</button>
-                                <button class="action-icon" aria-label="共有">🔗</button>
+                                <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' =>  $prefecture_en]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                                <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                             </div>
                         </div>
                     </div>
@@ -162,8 +166,12 @@
                             <div class="profile-post-date">1月11日 14:20</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -227,8 +235,12 @@
                             <div class="profile-post-date">1月10日 16:45</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -292,8 +304,12 @@
                             <div class="profile-post-date">1月9日 11:30</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -357,8 +373,12 @@
                             <div class="profile-post-date">1月8日 13:15</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -422,8 +442,12 @@
                             <div class="profile-post-date">1月7日 10:05</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -487,8 +511,12 @@
                             <div class="profile-post-date">1月6日 15:50</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -552,8 +580,12 @@
                             <div class="profile-post-date">1月5日 09:40</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -615,8 +647,12 @@
                             <div class="profile-post-date">1月4日 14:25</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
@@ -680,8 +716,12 @@
                             <div class="profile-post-date">1月3日 11:10</div>
                         </div>
                         <div class="profile-post-actions">
-                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">📢</button>
-                            <button class="action-icon" aria-label="共有">🔗</button>
+                            <button class="action-icon" aria-label="通知" onclick="location.href='{{ route('critique', ['prefecture' => $prefecture_en ]) }}'">
+                            <span class="icon-megaphone"></span>
+                        </button>
+                            <button class="action-icon" aria-label="共有">
+                            <span class="icon-link"></span>
+                        </button>
                         </div>
                     </div>
                     </div>
