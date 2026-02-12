@@ -2,7 +2,7 @@
     <div class="header-top">
         <div class="header-logo">
             <a href="{{ route('regions') }}">
-                <img src="{{ asset('images/Govspark.png') }}" alt="GovSpark">
+                <img src="{{ asset('images/GovSpark.png') }}" alt="GovSpark">
             </a>
         </div>
         <button class="menu-button" id="menuButton" aria-label="メニュー">⋮</button>
