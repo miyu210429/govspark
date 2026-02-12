@@ -10,7 +10,7 @@
     <div class="container">
         <!-- ロゴエリア -->
         <div class="logo-area">
-            <img src="{{ asset('images/GovSpark.png') }}" alt="GovSpark デジタル庁">
+            <img src="{{ asset('images/GovSpark_re.png') }}" alt="GovSpark デジタル庁">
         </div>
 
         <!-- 地域選択エリア -->
